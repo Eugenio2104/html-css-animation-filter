@@ -98,3 +98,44 @@
         transform: rotate(330deg);
     }
 }
+
+
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: muovi-linea-top;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes muovi-linea-top {
+    0%{
+        left: 10%;
+    }
+    40%{
+        left: calc(100% - 60px);
+    }
+    100%{
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: muovi-linea-bottom;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+@keyframes muovi-linea-bottom {
+    0%{
+        right: 20%;
+    }
+
+    40%{
+        right: calc(100% - 60px);
+    }
+
+    100%{
+        right: 20%;
+    }
+}
