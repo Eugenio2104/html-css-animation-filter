@@ -67,7 +67,8 @@
     transition: 3s;
 }
 
-.ex-9-img{
+.ex-9-img:hover{
+    transform: scale(1.5);
     border-radius: 35px;
     filter: grayscale(.3) sepia(.6);
 }
@@ -137,5 +138,26 @@
 
     100%{
         right: 20%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: muovi-linea-top-13;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes muovi-linea-top-13 {
+    0%{
+        left: 20px;
+    }
+
+    40%{
+        left: 360deg;
+    }
+
+    100%{
+        left: 20px;
     }
 }
