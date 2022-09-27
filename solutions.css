@@ -42,3 +42,23 @@
     transform:scale(.5);
 }
 
+.ex-6-img:hover{
+    filter:grayscale(1);
+}
+
+.ex-7-img{
+    transition: 2s;
+}
+
+.ex-7-img:hover{
+    filter: sepia(.5);
+}
+
+.ex-8-img{
+    transition: 2s;
+}
+
+.ex-8-img:hover{
+    border-radius: 35px;
+    filter: grayscale(0.5) sepia(.5);
+}
